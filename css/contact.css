@@ -1,0 +1,73 @@
+/* Contact Section Styles */
+.contact {
+  background-color: var(--white);
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+}
+
+.contact-item {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-right: 16px;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: var(--black);
+}
+
+.contact-item p {
+  color: var(--gray-dark);
+  margin-bottom: 0;
+}
+
+.contact-form {
+  background-color: var(--gray-light);
+  padding: 32px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--white);
+  border: 1px solid var(--gray-medium);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(255, 127, 0, 0.1);
+}
+
+.contact-form .btn-primary {
+  width: 100%;
+}

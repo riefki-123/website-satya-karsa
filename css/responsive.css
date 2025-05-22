@@ -1,0 +1,128 @@
+/* Responsive Styles */
+
+/* Tablets and smaller laptops */
+@media (max-width: 992px) {
+  .hero-content h2 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2.2rem;
+  }
+  
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  #nav-toggle {
+    display: flex;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: var(--white);
+    width: 250px;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    transition: var(--transition);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-menu.active {
+    right: 0;
+  }
+  
+  .nav-menu li {
+    margin: 15px 0;
+  }
+  
+  .nav-menu a {
+    color: var(--black);
+    font-size: 1.1rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 2.2rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .services-grid,
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .footer-links h4::after,
+  .footer-contact h4::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .footer-contact p {
+    justify-content: center;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 576px) {
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+  }
+  
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .services-grid,
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .service-card {
+    max-width: 100%;
+  }
+  
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .contact-item i {
+    margin-right: 0;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+}
